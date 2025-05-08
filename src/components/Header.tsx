@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { useAuth } from '@/contexts/AuthContext';
-import { Car, User } from 'lucide-react';
+import { Car, User, Info } from 'lucide-react';
 
 const Header: React.FC = () => {
   const { authState, logout } = useAuth();
@@ -22,6 +22,9 @@ const Header: React.FC = () => {
           </Link>
           <Link to="/rides" className="text-gray-700 hover:text-primary transition-colors">
             Поездки
+          </Link>
+          <Link to="/how-it-works" className="text-gray-700 hover:text-primary transition-colors">
+            Как это работает
           </Link>
           <Link to="/premium" className="text-gray-700 hover:text-primary transition-colors">
             Премиум

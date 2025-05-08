@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Car, MapPin, User } from 'lucide-react';
+import { Car, MapPin, User, Info } from 'lucide-react';
 
 const MobileNav: React.FC = () => {
   const location = useLocation();
@@ -17,6 +17,11 @@ const MobileNav: React.FC = () => {
         <Link to="/rides" className={`flex flex-col items-center ${location.pathname === '/rides' ? 'text-primary' : 'text-gray-500'}`}>
           <MapPin className="h-6 w-6" />
           <span className="text-xs">Поездки</span>
+        </Link>
+        
+        <Link to="/how-it-works" className={`flex flex-col items-center ${location.pathname === '/how-it-works' ? 'text-primary' : 'text-gray-500'}`}>
+          <Info className="h-6 w-6" />
+          <span className="text-xs">Как</span>
         </Link>
         
         <Link to="/profile" className={`flex flex-col items-center ${location.pathname === '/profile' ? 'text-primary' : 'text-gray-500'}`}>
