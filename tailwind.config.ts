@@ -26,10 +26,10 @@ export default {
 				background: 'hsl(var(--background))',
 				foreground: 'hsl(var(--foreground))',
 				primary: {
-					DEFAULT: '#9b87f5',
-					light: '#c1b5f8',
-					dark: '#7e69ab',
-					foreground: '#ffffff'
+					DEFAULT: '#FFD43B', // Яркий жёлтый
+					light: '#FFF3B0', // Светло-жёлтый
+					dark: '#E6B800', // Тёмно-жёлтый
+					foreground: '#333333' // Тёмный текст для жёлтого фона
 				},
 				secondary: {
 					DEFAULT: '#33c3f0',
@@ -46,7 +46,7 @@ export default {
 					foreground: 'hsl(var(--muted-foreground))'
 				},
 				accent: {
-					DEFAULT: '#f2fce2',
+					DEFAULT: '#9b87f5', // Оставляем фиолетовый для акцента
 					foreground: '#333333'
 				},
 				popover: {
