@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <Link to="/rides" className="text-gray-700 hover:text-primary transition-colors">
             Поездки
           </Link>
-          <Link to="/how-it-works" className="text-gray-700 hover:text-primary transition-colors">
+          <Link to="/how-it-works" className="text-gray-700 hover:text-primary transition-colors font-medium">
             Как это работает
           </Link>
           <Link to="/premium" className="text-gray-700 hover:text-primary transition-colors">

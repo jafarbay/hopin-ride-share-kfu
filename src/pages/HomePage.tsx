@@ -28,7 +28,11 @@ const HomePage: React.FC = () => {
                   </Button>
                 </Link>
                 <Link to="/how-it-works">
-                  <Button variant="outline" size="lg" className="border-white hover:bg-white/10">
+                  <Button 
+                    variant="outline" 
+                    size="lg" 
+                    className="bg-[#333] text-white border-[#333] hover:bg-[#444] hover:border-[#444] hover:text-white"
+                  >
                     Как это работает
                   </Button>
                 </Link>
