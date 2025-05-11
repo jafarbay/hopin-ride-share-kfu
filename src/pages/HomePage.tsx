@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
@@ -40,8 +39,8 @@ const HomePage: React.FC = () => {
             </div>
             <div className="md:w-1/2 flex justify-center">
               <img 
-                src="/placeholder.svg" 
-                alt="HopIn Car Ride" 
+                src="/hero-car-sharing.svg" 
+                alt="Студенты делятся поездками в университет" 
                 className="max-w-full rounded-lg shadow-lg animate-fade-in"
               />
             </div>
