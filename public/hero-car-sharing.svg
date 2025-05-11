@@ -1,34 +1,77 @@
 
 <svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400" fill="none">
-  <rect width="600" height="400" rx="10" fill="#FFE29F" />
-  <rect x="50" y="250" width="500" height="20" rx="5" fill="#444444" />
+  <rect width="600" height="400" rx="10" fill="#FFF3B0" />
+  
+  <!-- Sky background with gradient -->
+  <rect width="600" height="250" rx="10" fill="url(#sky-gradient)" />
+  
+  <!-- Road -->
+  <rect x="0" y="250" width="600" height="150" rx="0" fill="#555555" />
+  <rect x="30" y="320" width="80" height="10" rx="2" fill="#FFFFFF" />
+  <rect x="170" y="320" width="80" height="10" rx="2" fill="#FFFFFF" />
+  <rect x="310" y="320" width="80" height="10" rx="2" fill="#FFFFFF" />
+  <rect x="450" y="320" width="80" height="10" rx="2" fill="#FFFFFF" />
+  
   <!-- Main car body -->
-  <rect x="150" y="150" width="300" height="100" rx="30" fill="#4A6FFF" />
-  <rect x="200" y="110" width="200" height="60" rx="20" fill="#6D88FF" />
+  <rect x="150" y="190" width="300" height="80" rx="20" fill="#4A6FFF" />
+  <rect x="200" y="150" width="200" height="60" rx="15" fill="#6D88FF" />
+  
   <!-- Windows -->
-  <rect x="220" y="120" width="60" height="40" rx="5" fill="#B8E0FF" />
-  <rect x="320" y="120" width="60" height="40" rx="5" fill="#B8E0FF" />
+  <rect x="220" y="160" width="60" height="40" rx="5" fill="#B8E0FF" />
+  <rect x="320" y="160" width="60" height="40" rx="5" fill="#B8E0FF" />
+  
   <!-- Wheels -->
-  <circle cx="200" cy="250" r="40" fill="#333333" />
-  <circle cx="200" cy="250" r="20" fill="#666666" />
-  <circle cx="400" cy="250" r="40" fill="#333333" />
-  <circle cx="400" cy="250" r="20" fill="#666666" />
-  <!-- People -->
-  <circle cx="250" cy="140" r="20" fill="#FFCD8A" />
-  <circle cx="350" cy="140" r="20" fill="#FFCD8A" />
-  <!-- University building in the background -->
-  <rect x="500" y="100" width="80" height="150" rx="5" fill="#E6B800" />
-  <rect x="520" y="120" width="15" height="25" rx="2" fill="#FFF3B0" />
-  <rect x="545" y="120" width="15" height="25" rx="2" fill="#FFF3B0" />
-  <rect x="520" y="155" width="15" height="25" rx="2" fill="#FFF3B0" />
-  <rect x="545" y="155" width="15" height="25" rx="2" fill="#FFF3B0" />
-  <rect x="520" y="50" width="40" height="50" rx="5" fill="#FFD43B" />
-  <!-- Routes/paths -->
-  <path d="M120 230 Q 300 100 480 230" stroke="#333333" stroke-width="3" stroke-dasharray="10,10" />
-  <circle cx="120" cy="230" r="10" fill="#FFD43B" />
-  <circle cx="480" cy="230" r="10" fill="#FFD43B" />
-  <!-- Students waiting -->
-  <circle cx="120" cy="210" r="15" fill="#FFCD8A" />
-  <!-- Text labels -->
-  <text x="50" y="50" font-family="Arial" font-size="18" font-weight="bold" fill="#333333">HopIn: Совместные поездки</text>
+  <circle cx="200" cy="270" r="30" fill="#333333" />
+  <circle cx="200" cy="270" r="15" fill="#666666" />
+  <circle cx="400" cy="270" r="30" fill="#333333" />
+  <circle cx="400" cy="270" r="15" fill="#666666" />
+  
+  <!-- University buildings -->
+  <rect x="50" y="100" width="70" height="150" rx="5" fill="#FFD43B" />
+  <rect x="65" y="120" width="15" height="25" rx="2" fill="#FFF3B0" />
+  <rect x="90" y="120" width="15" height="25" rx="2" fill="#FFF3B0" />
+  <rect x="65" y="160" width="15" height="25" rx="2" fill="#FFF3B0" />
+  <rect x="90" y="160" width="15" height="25" rx="2" fill="#FFF3B0" />
+  <rect x="65" y="60" width="40" height="40" rx="5" fill="#E6B800" />
+  
+  <rect x="480" y="80" width="90" height="170" rx="5" fill="#FFD43B" />
+  <rect x="500" y="110" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="530" y="110" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="500" y="150" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="530" y="150" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="500" y="190" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="530" y="190" width="20" height="30" rx="2" fill="#FFF3B0" />
+  <rect x="505" y="40" width="40" height="40" rx="5" fill="#E6B800" />
+  
+  <!-- People in car -->
+  <circle cx="250" cy="180" r="15" fill="#FFCD8A" />
+  <circle cx="350" cy="180" r="15" fill="#FFCD8A" />
+  
+  <!-- Routes/paths with animations -->
+  <path d="M100 240 Q 300 120 500 240" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="10,10" opacity="0.7">
+    <animate attributeName="stroke-dashoffset" from="20" to="0" dur="2s" repeatCount="indefinite" />
+  </path>
+  
+  <!-- Starting and ending points -->
+  <circle cx="100" cy="240" r="10" fill="#FFD43B" />
+  <circle cx="500" cy="240" r="10" fill="#FFD43B" />
+  
+  <!-- Sun -->
+  <circle cx="50" cy="50" r="30" fill="#FFD43B">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite" />
+  </circle>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="70" rx="40" ry="25" fill="white" opacity="0.8" />
+  <ellipse cx="190" cy="60" rx="30" ry="20" fill="white" opacity="0.8" />
+  <ellipse cx="400" cy="50" rx="50" ry="20" fill="white" opacity="0.7" />
+  <ellipse cx="450" cy="60" rx="30" ry="15" fill="white" opacity="0.7" />
+  
+  <!-- Definitions -->
+  <defs>
+    <linearGradient id="sky-gradient" x1="0" y1="0" x2="0" y2="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#87CEEB" />
+      <stop offset="1" stop-color="#E0F7FA" />
+    </linearGradient>
+  </defs>
 </svg>
